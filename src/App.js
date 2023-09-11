@@ -4,11 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import FindATherapist from "./FindATherapist";
 import Portal from "./Portal";
-import GriefTalkBlog from "./GriefTalkBlog";
 
-if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
-    throw new Error("Missing Publishable Key!");
-}
 const clerkPublishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
 function App() {
